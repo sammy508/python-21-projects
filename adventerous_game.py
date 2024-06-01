@@ -52,14 +52,7 @@ elif answer == "left":
 
                 answer = input("You wanna use stair or cable car. Type cable for cablecar and stair for walk").lower()
 
-                if answer == "walk":
-                    print("C0ngrats!!!! \n You reached to the top and it's your final destination")
-                    quit()
-
-                elif answer =="cable":
-                    print("It was out of service! you loose bastard")
-                    quit()
-    
+                
 
 
 else:
