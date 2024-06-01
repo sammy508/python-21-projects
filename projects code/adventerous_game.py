@@ -43,7 +43,7 @@ elif answer == "left":
       elif answer == "walk":
             print("0hh, you choose walk and reached to a mid way")
 
-            answer = input("You have to move ahead , theres a jungle and you have 2 way which will you pick. if wanna go straight type straight, if wanna take secomd way type left")
+            answer = input("You have to move ahead , theres a jungle and you have 2 way which will you pick. if wanna go straight type straight, if wanna take secomd way type left: ").lower()
             if answer == "straight":
                 print("you loose man, you lost on a scary jungle")
                 quit()
