@@ -1,11 +1,11 @@
-Number Guessing Game
+**Number Guessing Game**
 
-
-Project Description
+**
+Project Description**
 
 This is a simple number guessing game implemented in Python. The game generates a random number within a user-defined range, and the player attempts to guess the number. Feedback is provided for each guess, indicating whether the guess is too high, too low, or correct. The game continues until the player guesses the correct number, and the total number of guesses is displayed at the end.
 
-Features
+**Features**
 
 User-defined range for the random number.
 Input validation to ensure the upper bound is not less than or equal to the lower bound.
@@ -19,7 +19,7 @@ Open your terminal or command prompt.
 Navigate to the directory where number_guessing_game.py is located.
 Run the script using the command: python number_guessing_game.py.
 
-Sample Code
+**Sample Code**
 
 Here's a snippet of the Python code for the number guessing game:
 
@@ -60,7 +60,7 @@ while True:
 
 print(f'You got it in {guesses} guesses')
 
-Usage
+**Usage**
 
 Run the script to start the game.
 Enter the lower and upper bounds for the random number range.
@@ -69,5 +69,6 @@ The game ends when the correct number is guessed, displaying the total number of
 Contributing
 If you'd like to contribute to this project, please fork the repository and submit a pull request. For major changes, please open an issue to discuss what you would like to change.
 
-License
+**License**
+
 This project is open-source and available under the MIT License.
