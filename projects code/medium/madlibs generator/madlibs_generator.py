@@ -27,5 +27,3 @@ for word in words:
     answers[word] = answer
 print(answers) 
 
-word,answer = answer, word
-print(word)
