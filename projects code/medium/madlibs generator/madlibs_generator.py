@@ -1,4 +1,4 @@
-
+# reading story from file
 with open("story.txt","r") as file:
     story = file.read()
     print(story)
@@ -7,10 +7,11 @@ words= set()
 
 start_of_word = -1
 
+# Define placeholder delimiters
 word_start_targrt = "<"
 word_end_targrt = ">"
-
-
+ 
+# extracting placeholders
 for i, char in enumerate(story):
     if char == word_start_targrt:
         start_of_word = i
@@ -22,6 +23,7 @@ for i, char in enumerate(story):
 
 answers ={}
 
+# collecting inouts form user
 for word in words:
     answer = input(f"Enter compatible word for {word} :")
     answers[word] = answer
