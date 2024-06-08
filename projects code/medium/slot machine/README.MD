@@ -44,7 +44,7 @@ Running the Game
 
     bash
 
-git clone https://github.com/yourusername/slot-machine-game.git
+git clone https://github.com/sammy508/python-21-projects/tree/main/projects%20code/medium/slot%20machine
 
 Navigate to the project directory:
 
