@@ -21,6 +21,46 @@ def get_number_of_racers():
         else:
             print("Please enter a valid number of racers between 2 and 8.")
 
+
+def race(colors):
+    turtles = create_turtle(colors)
+    while True:
+        for racer in turtles:
+            distance = random.randrange(1,30)
+            racer.forward(distance)
+            x,y = racer.pos()
+            
+            if y >= HEIGHT//2 -10:
+                return colors[turtles.index(racer)]
+
+
+
+
+
+def create_turtle(colors):
+
+    spacing = WIDTH//(len(colors)+1)
+    
+    turtles =[]
+    for i, color in enumerate(colors):
+        position_width = -WIDTH//2 +(i+1)*spacing
+        position_height = -HEIGHT//2+20
+        racer = turtle.Turtle()
+        racer.color(color)
+        racer.shape('turtle')
+        racer.left(90)
+        racer.penup()
+        racer.setpos(position_width,position_height)
+        racer.pendown()
+        turtles.append(racer)
+
+    return turtles      
+
+
+
+
+
+
 def init_turtle():
 
     screen = turtle.Screen()
@@ -34,6 +74,7 @@ racer = turtle.Turtle()
 
 random.shuffle(COLORS)
 colors = COLORS [:racers] # here : is a slice operaotr it pick the colour from list 
-print(colors)
+winner = race(colors)
+print(f"The winner is {winner}")
 
 
