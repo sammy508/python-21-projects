@@ -132,9 +132,6 @@ def main():
     
     print(f"You left with ${balance}")
 
-    if balance <10:
-        print("You don't have sufficient balance.")
     
-        quit()
     
 main()
