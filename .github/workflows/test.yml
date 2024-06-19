@@ -1,0 +1,11 @@
+name:simple ci wirkflow
+on:
+  push:
+    branches:
+      -main
+  jobs:
+    systembuild:
+      runs-on: ubuntu-latest
+      steps:
+      -name:Print a tesr message
+      run: echo" hello from $github_actor
